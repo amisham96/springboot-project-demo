@@ -61,5 +61,5 @@
         state: started
         enabled: yes
       when: ansible_service_mgr == "systemd"
-    - name: copy war file
-      shell: scp ./target/candyshop-0.0.1-SNAPSHOT.war root@ansjenkinsnode:/opt/tomcat9/apache-tomcat-9.0.64/webapps
+#    - name: copy war file
+ #     command: scp /var/lib/jenkins/workspace/ansible-tomcat-pipeline/target/*.war root@ansjenkinsnode:/opt/tomcat9/apache-tomcat-9.0.64/webapps
