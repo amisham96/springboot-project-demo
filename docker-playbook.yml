@@ -4,7 +4,7 @@
   vars:
     container_count: 2
     default_container_name: docker
-    default_container_image: blazerrt86899/chatapp
+    default_container_image: a30sham/candyshopappjwt
     default_container_command: sleep 1d
 
   tasks:
@@ -38,10 +38,9 @@
 
     - name: Update apt and install docker-ce
       apt:
-        name: {{ item }}
+        name: docker-ce
         state: latest
         update_cache: true
-      loop: ['docker-ce','docker-ce-cli','containerd.io','docker-compose-plugin']
 
     - name: Install Docker Module for Python
       pip:
