@@ -2,7 +2,7 @@
 #ansy playbook start with three dash
 -
 ###this minus in yaml indicate a list of items. the play contains a list of play
-  hosts: client
+  hosts: [node]
   vars:
     container_count: 4
     default_container_name: myconatiner 
